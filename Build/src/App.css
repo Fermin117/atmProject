@@ -1,0 +1,230 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.App-header {
+  background-color: #9f80ac; /* Purple background color */
+  height: 100%; /* Make .App-header cover the full page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the bottom */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: auto; /* Add overflow to handle content that exceeds the viewport */
+}
+
+.column {
+  width: 90%; /* Adjust width to be responsive */
+  max-width: 800px; /* Maximum width */
+  height: 100%; /* Adjust height to be responsive */
+  background-color: #f1f0e7; /* Color of the column */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center items horizontally */
+  position: relative; /* Make it a positioned container */
+}
+
+.top-image {
+  position: absolute;
+  top: 3%; /* Adjust as needed to position the image */
+  left: 70%;
+  transform: translateX(-50%);
+  width: 60%; /* Increase the width */
+  height: 10%; /* Maintain aspect ratio */
+  z-index: 10; /* Ensure the image is on top of everything */
+}
+
+.upper-sign {
+  width: 110%; /* Adjust width to be responsive */
+  max-width: 900px; /* Maximum width */
+  height: 15%; /* Adjust height to be responsive */
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  background-color: #126cae; /* Background color of the upper-sign */
+  padding: 10px; /* Padding inside the upper-sign */
+  border-radius: 15px; /* Rounded corners */
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect around the bottom */
+}
+
+.upper-sign img {
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 350px; /* Maximum width */
+  height: 80%; /* Maintain aspect ratio */
+}
+
+.graffiti-image {
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 300px; /* Maximum width */
+  height: 10%; /* Maintain aspect ratio */
+}
+
+.creditCard-image {
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 300px; /* Maximum width */
+  height: 100%; /* Maintain aspect ratio */
+  opacity: 1; /* Set the transparency of the image */
+  overflow: hidden; /* Hide the bottom half of the image */
+}
+
+.image-container {
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 300px; /* Maximum width */
+  height: 100%; /* Set to half the height of the image */
+  overflow: hidden; /* Hide the bottom half of the image */
+}
+
+.square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 500px; /* Maximum width */
+  height: 40%; /* Adjust height to be responsive */
+  max-height: 500px;
+  background-color: #7eb4d5; /* Background color of the square container */
+  border: 10px solid #e1dcdc; /* Border color and width */
+  margin: 20px; /* Gray margin around the square container */
+}
+
+.additional-images {
+  width: 100%; /* Adjust width to be responsive */
+  height: 10%; /* Maintain aspect ratio */
+  margin: 0 10px;
+}
+
+.systems-image {
+  position: absolute; /* Position the image absolutely */
+  left: 75%; /* Move it across the screen horizontally */
+  top: 72%; /* Move it across the screen vertically */
+  transform: translate(-50%, -50%); /* Center the image */
+  width: 60%; /* Adjust width to be responsive */
+  max-width: 100px; /* Maximum width */
+  height: auto;
+}
+
+.sticker-image {
+  position: absolute; /* Position the image absolutely */
+  left: 25%; /* Move it across the screen horizontally */
+  top: 72%; /* Move it across the screen vertically */
+  bottom: 10%;
+  transform: translate(-50%, -50%); /* Center the image */
+  width: 90%; /* Adjust width to be responsive */
+  max-width: 170px; /* Maximum width */
+  height: 10%;
+}
+
+.square-button {
+  position: absolute; /* Position the image absolutely */
+  transform: translate(-50%, -50%); /* Center the image */
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 10%; /* Maximum width */
+  height: 1%;
+  max-height: auto;
+  background-color: #c1c1c1; /* Background color of the buttons */
+  color: white; /* Text color of the buttons */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.square-button:hover {
+  background-color: #a8abad; /* Darker background color on hover */
+}
+
+.atm-display {
+  width: 50%; /* Adjust width to be responsive */
+  max-width: 100%; /* Maximum width */
+  height: 5%; /* Fixed height for the display */
+  background-color: #114195; /* Background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  padding: 5px; /* Padding inside the display */
+  margin: 0; /* Remove margin */
+  font-size: 1.2em; /* Font size of the display text */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.transition-container {
+  position: relative; /* Ensure the container is positioned relative */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  width: 100%; /* Adjust width to fit the square container */
+  height: 100%; /* Adjust height to fit the square container */
+  background-color: #7eb4d5;
+}
+
+.transition-container.hidden {
+  opacity: 0;
+  background-color: #7eb4d5; /* Background color of the square container */
+}
+
+.transition-container.show {
+  opacity: 1;
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Adjust width to be responsive */
+  max-width: 300px; /* Maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image-container img {
+  width: 100%; /* Adjust width to be responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+.label-container1 {
+  position: absolute;
+  top: 1%; /* Adjust as needed to position the label */
+  left: 0%; /* Adjust as needed to position the label */
+  background-color: #f1f0e7; /* Light beige background */
+  color: #f1f0e7; /* White text color */
+  height: 100%;
+}
+.label-container2 {
+  position: absolute;
+  top: 1%; /* Adjust as needed to position the label */
+  right: 0%; /* Adjust as needed to position the label */
+  background-color: #f1f0e7; /* Light beige background */
+  color: #f1f0e7; /* White text color */
+  height: 100%;
+}
+.image-label1 {
+  font-size: 1em; /* Font size of the label */
+}
+
+.image-label2 {
+  font-size: 1em; /* Font size of the label */
+}
