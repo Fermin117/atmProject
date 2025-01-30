@@ -1,0 +1,72 @@
+.upper-container {
+    position: relative; /* Ensure the container is positioned relative */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%; /* Adjust width to fit the square container */
+    height: 100%; /* Adjust height to fit the square container */
+    background-color: #7eb4d5;
+}
+
+.center-container {
+    position: relative; /* Ensure the container is positioned relative */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust width to fit the square container */
+    height: 100%; /* Adjust height to fit the square container */
+    background-color: #7eb4d5;
+}
+
+.upper-container h2 {
+    margin-bottom: 5px; /* Reduce the space below the heading */
+}
+
+.upper-container p {
+    margin-top: 5px; /* Reduce the space above the paragraph */
+    margin-bottom: 5px; /* Reduce the space below the paragraph */
+    line-height: 1.2; /* Adjust the line height if needed */
+}
+
+.withdraw-container {
+    position: relative; /* Ensure the container is positioned relative */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center;
+    width: 100%; /* Adjust width to fit the square container */
+    height: 100%; /* Adjust height to fit the square container */
+    background-color: #7eb4d5;
+}
+
+.input-style {
+    width: 300px;
+    height: 50px;
+    background-color: #126cae;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0; /* Remove margin */
+}
+
+.input-style::before {
+    content: '$'; /* Add currency symbol before the input value */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+}
+
+.input-style-transfer {
+    width: 35%;
+    height: 7%;
+    background-color: #126cae;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0; /* Remove margin */
+}

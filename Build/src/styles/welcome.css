@@ -1,0 +1,43 @@
+.welcome-container {
+    position: relative; /* Ensure the container is positioned relative */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust width to fit the square container */
+    height: 100%; /* Adjust height to fit the square container */
+    background-color: #7eb4d5;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.welcome-message {
+    font-family: 'Courier New', serif;
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: blink 3s infinite;
+}
+
+.login-sign {
+    margin-top: 20px;
+}
+
+.login-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #114195;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0d3475;
+}

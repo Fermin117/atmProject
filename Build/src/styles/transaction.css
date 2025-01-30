@@ -1,0 +1,56 @@
+.transaction-container {
+    position: relative; /* Ensure the container is positioned relative */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    width: 100%; /* Adjust width to fit the square container */
+    height: 100%; /* Adjust height to fit the square container */
+    background-color: #7eb4d5;
+}
+
+.balance-display {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.transaction-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-button:hover {
+    background-color: #0056b3;
+}
+
+.transaction-heading {
+    position: relative; /* Ensure the container is positioned relative */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%; /* Adjust width to fit the square container */
+    height: 100%; /* Adjust height to fit the square container */
+    background-color: #7eb4d5;
+    margin: 0px;
+}
+
+.transaction-heading h2 {
+    margin-bottom: 0px; /* Adjust the value to add space below the heading */
+}
+
+.transaction-heading p {
+    margin-top: 0px; /* Adjust the value to add space above the paragraph */
+}
